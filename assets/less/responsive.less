@@ -1,0 +1,114 @@
+//
+// RESPONSIVE
+// --------------------------------------------------
+@media (max-width: 979px) {
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+		#content {
+			#liquid-layout > .unFluidFixedOverflow();
+			padding: 10px;
+			.sidebar { margin-bottom: 15px;}
+			.table-responsive {
+				.more-info { padding: 10px;}
+				.ranking { width: 148px; padding: 0px;}
+			}
+		}
+		#footer{
+			.footer {
+				.btnSocials {
+					h4 { font-size: 16px;}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	#slider {
+		ul > li > a{
+			display: none;
+		}
+	}
+	#content {
+		#liquid-layout > .unFluidFixedOverflow();
+		.tabs-container {
+			.tabs {
+				.btndropdown { 
+					display: block;
+					background: #ff4114;
+					color: #fff;
+					font-size: 16px;
+					position: relative;
+					padding: 10px;
+					font-weight: bold;
+					text-align: center;
+					cursor: pointer;
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: -14px;
+						left: 50%;
+						background: url("../img/triangle_orange.jpg") no-repeat left top;
+						display: block;
+						height: 14px;
+						width: 14px;
+					}
+					br {
+						display: none;
+					}
+				}
+				ul {
+					position: absolute;
+					width: 100%;
+					display: none;
+					li { 
+						width: 100%;		
+						float: none;
+						display: block;
+						background: #e5dab8;
+						padding: 15px 0;
+						font-size: 14px;
+						color: #343023;
+						font-weight: bold;
+						text-align: center;
+						cursor: pointer;
+						margin-left: 0 !important;
+						&:hover {
+							background: #ff4114;
+							color: #343023;
+							margin-top: 0px;
+							background: #e5dab8;
+							font-size: 14px;
+						}
+						br { display: none;}
+					}
+					li.selected {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	#footer {
+		.footer {
+			.contact{
+				float: none;
+				text-align: center;
+			}
+			.btnSocials{
+				float: none;
+				text-align: center;
+				margin-top: 25px;
+				a {
+					margin: 0 10px 10px;
+				}
+			}	
+		}
+	}
+}
+
+
+@media (max-width: 360px) {
+}
